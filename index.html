@@ -54,31 +54,6 @@ function handleComplete(evt,comp) {
 	AdobeAn.makeResponsive(true,'both',true,1,[canvas,anim_container,dom_overlay_container]);	
 	AdobeAn.compositionLoaded(lib.properties.id);
 	fnStartAnimation();
-	// CLICK TRACKER FOR BUTTONS
-
-var checkButtons = setInterval(function () {
-    if (exportRoot.bt01 && exportRoot.bt02 && exportRoot.bt03 && exportRoot.bt04) {
-
-        exportRoot.bt01.addEventListener("click", function () {
-            window.open("https://yourlink.com/lemon", "_blank");
-        });
-
-        exportRoot.bt02.addEventListener("click", function () {
-            window.open("https://yourlink.com/latte", "_blank");
-        });
-
-        exportRoot.bt03.addEventListener("click", function () {
-            window.open("https://yourlink.com/cherry", "_blank");
-        });
-
-        exportRoot.bt04.addEventListener("click", function () {
-            window.open("https://yourlink.com/pandan", "_blank");
-        });
-
-        console.log("✅ Click listeners installed successfully");
-        clearInterval(checkButtons);
-    }
-}, 300);
 }
 </script>
 <!-- write your code here -->
@@ -92,3 +67,4 @@ var checkButtons = setInterval(function () {
 </body>
 
 </html>
+
